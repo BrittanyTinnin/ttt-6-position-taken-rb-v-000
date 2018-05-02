@@ -1,11 +1,3 @@
 def position_taken?(board, index)
-  if board[index] == " " || board[index] == ""
-    return false
-  end
-  if board[index] == nil
-    return false
-  end
-  if board[index] == "X" || board[index] == "O"
-    return true
-  end
-end# code your #position_taken? method here!!
+  (board[index] == " " || board[index] == "" || board[index] == nil) ? false : true
+end# re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
